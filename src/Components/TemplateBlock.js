@@ -22,28 +22,22 @@ class TemplateBlock extends Component {
 
 
 editSection=(editboo,newTitle) => { 
-
-this.setState({
-
-isEditable:!this.state.isEditable
-
-
-})
+	this.setState({
+		isEditable:!this.state.isEditable
+	})
 
 
 this.props.editChanges(this.state.isEditable,this.state.newTitle)
 
 }
 
+
 Changetext=(e)=>{
 
 this.setState({
-
-newTitle:e.target.value
-
-
-
+	newTitle:e.target.value
 })
+
 
 
 console.log(this.state.newTitle)
@@ -61,7 +55,7 @@ render() {
         <input
           type="text"
           onChange={this.Changetext}
-          
+         
         
           className="uppercase"
         />
@@ -85,7 +79,7 @@ return (
 
 					<div className="step-info">
 						<h1>{this.props.title} 	{textTrue}</h1>
-						<p> {this.props.description} </p>
+						<p> {this.props.description} 	{textTrue}</p>
 					</div>
 
 					<div className="section2">

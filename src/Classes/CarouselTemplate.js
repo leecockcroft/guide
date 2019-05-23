@@ -32,7 +32,7 @@ class CarouselTemplate extends Component {
 
 }
 
-componentDidMount=()=>{
+/*componentDidMount=()=>{
  JSON.parse(JSON.stringify(jsonData));
 console.log(jsonData[0].carousel)
  this.setState({
@@ -43,7 +43,7 @@ carousel:jsonData[0].carousel
  
  }
 
-
+*/
 
 changeText=(e)=>{
 
@@ -85,7 +85,8 @@ carousel:[
        ...this.state.carousel,
         {
           title:this.state.titleText,
-          description:"test"
+          description:"test",
+          img:<input type="file"/>
 
         }
 
@@ -105,11 +106,6 @@ carousel:[
 
 
 
-
-
-
-
-
  onChange=(e)=>{
 
 this.setState({
@@ -124,13 +120,6 @@ text:e.target.value
  }
 
 
- editSection=()=>{
-
-alert(this)
-
-
-
- }
 
 
 editChanges=(editboo,newTitle,indexToChange )=>{
@@ -175,8 +164,8 @@ this.setState({
     return (
 
         <div>
+          <ButtonAdd onChange={this.onChange} add={this.save}/>
 
-   <ButtonAdd add={this.addIcon} onChange={this.onChange}/>
      <ul className='list-group'>
         {this.state.carousel.map((item,index)=>(
          <TemplateBlock key={index} title={item.title} image={item.img}  description={item.description} edit={'edit'} editChanges={ (editboo,newTitle)=> this.editChanges(editboo,newTitle,index)} />
