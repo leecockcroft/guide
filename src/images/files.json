@@ -1,0 +1,27 @@
+ {
+
+"items":[
+  {
+
+          "cms": "Gemini",
+                    "url": "gemini",
+                    "guide": "1",
+                    "img": "homepageImage",
+                    "steps": "guide"
+                  },
+                  {
+                    "cms": "Lemini",
+                    "url": "test",
+                    "guide": "2",
+                    "img": "homepageImage",
+                    "steps": "guide"
+                  },
+                  {
+                    "cms": "ladbrokes",
+                    "url": "ladbrokes",
+                    "guide": "1",
+                    "img": "homepageImage",
+                   " steps": "guide"
+        }
+      ]
+}

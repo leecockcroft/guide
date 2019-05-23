@@ -1,0 +1,27 @@
+[
+
+{
+	"carousel":[
+		{
+		"title":"testing json title",
+		"description":"testing json description",
+		"img":"./images/ladbrokes/dualLinks/add_dates.png"
+	},{
+
+
+		"title":"testing json title2",
+		"description":"testing json description testing json description testing json description",
+		"img":"./images/ladbrokes/dualLinks/createNew.png"
+
+
+	}
+
+
+
+
+	]
+}
+
+
+
+]
